@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Sumit Hirve - Research Works</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Dr. Sumit Hirve - Research Works</h1>
+        <div class="nav-buttons">
+            <button class="nav-button" onclick="showCategory('about')">About Me</button>
+            <button class="nav-button" onclick="showCategory('journals')">Journals</button>
+            <button class="nav-button" onclick="showCategory('papers')">Conference Papers</button>
+            <button class="nav-button" onclick="showCategory('patents')">Patents</button>
+            <button class="nav-button" onclick="showCategory('copyrights')">Copyrights</button>
+            <button class="nav-button" onclick="showCategory('book')">Book & Book Chapter</button>
+        </div>
+    </header>
+    
+    <main>
+        <section id="about" class="category">
+            <h2>Home</h2>
+            <div id="container">
+                <div id="image">
+                    <img src="sir.jpg" alt="Profile Photo" class="profile-photo">
+                </div>
+                <div id="info">
+                    <p>
+                        I am Dr. Sumit Hirve, a passionate researcher and academic with a deep interest in areas like data visualization, augmented reality, and artificial intelligence. My work primarily focuses on applying these technologies to solve real-world challenges, especially in healthcare, big data analytics, and IoT systems. Over the years, I have authored numerous journal articles, conference papers, and book chapters, with my research being recognized on platforms such as Google Scholar and Scopus. I am also proud to hold patents for innovative AI-driven solutions. Through my work, I aim to push the boundaries of technology and contribute to advancements that have a meaningful impact on society. </br> To visit my Scopus And Google Scholar Profile check out following Links :                   </p>
+                    <h6><a href="https://www.scopus.com/authid/detail.uri?authorId=57200206895">Scopus Profile</a></h6>
+                    <h6><a href="https://scholar.google.co.in/citations?hl=en&user=EHRxUwcAAAAJ&view_op=list_works&sortby=pubdate">Google Scholar Profile</a></h6>
+                    <h6>ORCID ID :- 57200206895</h6>
+                </div>
+            </div>
+        </section>        
+
+        <section id="papers" class="category">
+            <h2>Conference Papers</h2>
+            <span id="paper-count" style="float: left; font-weight: bold; margin-right: 10px;">Total Conference Papers:2</span> <!-- Counter for papers links -->
+            <div style="clear: both; margin-top: 10px;">
+                <label for="paper-sort">Sort by Year:</label>
+                <select id="paper-sort" onchange="sortPapers()">
+                    <option value="desc">Descending</option>
+                    <option value="asc">Ascending</option>
+                </select>
+            </div>
+            <ul id="paper-list">
+                <li data-year="2019">
+                    <a href="https://scholar.google.co.in/citations?view_op=view_citation&hl=en&user=EHRxUwcAAAAJ&citation_for_view=EHRxUwcAAAAJ:WF5omc3nYNoC">A survey on visualization techniques used for big data analytics (2019)</a>
+                    <button onclick="window.open('https://drive.google.com/file/d/1Ve5mLzC9cYD0JWV3f53ES9YN3iOqNPg0/view?usp=sharing','_blank')">Download</button>
+                </li>
+                <li data-year="2017">
+                    <a href="https://scholar.google.co.in/citations?view_op=view_citation&hl=en&user=EHRxUwcAAAAJ&citation_for_view=EHRxUwcAAAAJ:eQOLeE2rZwMC">An approach towards data visualization based on AR principles (2017)</a>
+                    <button onclick="window.open('https://drive.google.com/file/d/19-apQTVQYTNqsJ6GRFptCupNy0SzI5V4/view?usp=sharing','_blank')">Download</button>
+                </li>
+            </ul>
+        </section>
+        
+        
+        <section id="journals" class="category">
+            <h2>Journals</h2>
+            <span id="journal-count" style="float: left; font-weight: bold;"></span> <!-- Counter for journal links -->
+            <div style="clear: both; margin-top: 10px;">
+                <label for="journal-sort">Sort by Year:</label>
+                <select id="journal-sort" onchange="sortJournals()">
+                    <option value="desc">Descending</option>
+                    <option value="asc">Ascending</option>
+                </select>
+            </div>
+            <ul id="journal-list">
+                <li data-year="2013">
+                    <a href="https://scholar.google.co.in/citations?view_op=view_citation&hl=en&user=EHRxUwcAAAAJ&citation_for_view=EHRxUwcAAAAJ:u-x6o8ySG0sC">Mobile tracking application for locating friends using LBS (2013)</a>
+                    <button onclick="window.open('https://drive.google.com/file/d/1zVMAeRzZHG6UD45d7YzS-dWt-KzrXqH5/view?usp=sharing','_blank')">Download</button>
+                </li>
+                <li data-year="2021">
+                    <a href="https://scholar.google.co.in/citations?view_op=view_citation&hl=en&user=EHRxUwcAAAAJ&citation_for_view=EHRxUwcAAAAJ:UebtZRa9Y70C">Application of Augmented reality (AR) for Surgery and Patient Care (2021)</a>
+                    <button onclick="window.open('https://drive.google.com/file/d/1Q6Q-p6f41uxdAJTYL5jAhxZnlrkVNwIl/view?usp=sharing','_blank')">Download</button>
+                </li>
+                <li data-year="2024">
+                    <a href="https://scholar.google.co.in/citations?view_op=view_citation&hl=en&user=EHRxUwcAAAAJ&citation_for_view=EHRxUwcAAAAJ:8k81kl-MbHgC">Hybrid approach to medical decision-making: prediction of heart disease with artificial neural network (2024)</a>
+                    <button onclick="window.open('https://drive.google.com/file/d/1jcnTk0oFs-QNZH3nW8ICnAkMXds0P3d1/view?usp=sharing','_blank')">Download</button>
+                </li>
+                <li data-year="2024">
+                    <a href="https://scholar.google.co.in/citations?view_op=view_citation&hl=en&user=EHRxUwcAAAAJ&citation_for_view=EHRxUwcAAAAJ:MXK_kJrjxJIC">Quantum Machine Learning Algorithms for Optimization Problems: Theory, Implementation, and Applications (2024)</a>
+                    <button onclick="window.open('https://drive.google.com/file/d/1yV9ck8NOEqUjaoJx5N592hoSO7GQHwY_/view?usp=sharing','_blank')">Download</button>
+                </li>
+                <li data-year="2024">
+                    <a href="https://scholar.google.co.in/citations?view_op=view_citation&hl=en&user=EHRxUwcAAAAJ&citation_for_view=EHRxUwcAAAAJ:3fE2CSJIrl8C">ARTIFICIAL INTELLIGENCE IN SUSTAINABLE AGRICULTURE: ENHANCING EFFICIENCY AND REDUCING ENVIRONMENTAL IMPACT (2024)</a>
+                    <button onclick="window.open('https://drive.google.com/file/d/12P5jvz8zvM67xjW_ZyTQmotNyIq-8dkO/view?usp=sharing','_blank')">Download</button>
+                </li>
+                <li data-year="2024">
+                    <a href="https://scholar.google.co.in/citations?view_op=view_citation&hl=en&user=EHRxUwcAAAAJ&citation_for_view=EHRxUwcAAAAJ:0EnyYjriUFMC">Fault Detection in IoT Sensor Networks with XAI-LCS: Explainable AI-driven Diagnosis for Low-Cost Sensor (2024)</a>
+                    <button onclick="window.open('https://drive.google.com/file/d/1YdjVZuEe5YrmxeVsC91F4DpDW_ZMVX_2/view?usp=sharing','_blank')">Download</button>
+                </li>
+                <li data-year="2021">
+                    <a href="https://scholar.google.co.in/citations?view_op=view_citation&hl=en&user=EHRxUwcAAAAJ&citation_for_view=EHRxUwcAAAAJ:Se3iqnhoufwC">Rapid digitization of healthcare—A review of COVID-19 impact on our health systems (2021)</a>
+                    <button onclick="window.open('https://drive.google.com/file/d/1FwJC8F-xjUIB5QwPfwyLc-xZmeJJIaUw/view?usp=sharing','_blank')">Download</button>
+                </li>
+                <li data-year="2019">
+                    <a href="https://scholar.google.co.in/citations?view_op=view_citation&hl=en&user=EHRxUwcAAAAJ&citation_for_view=EHRxUwcAAAAJ:ufrVoPGSRksC">Survey on automated system for fake news detection using NLP & machine learning approach (2019)</a>
+                    <button onclick="window.open('https://drive.google.com/file/d/16YLWWrpjtyWTUbVPyzHKH859-cRJTbmu/view?usp=sharing','_blank')">Download</button>
+                </li>
+                <li data-year="2022">
+                    <a href="https://scholar.google.co.in/citations?view_op=view_citation&hl=en&user=EHRxUwcAAAAJ&citation_for_view=EHRxUwcAAAAJ:roLk4NBRz8UC">Improving Big Data Analytics With Interactive Augmented Reality (2022)</a>
+                    <button onclick="window.open('https://drive.google.com/file/d/1KZWUGCaituS2gq8Jotghxs4PAkI3Ar5x/view?usp=sharing','_blank')">Download</button>
+                </li>
+                <li data-year="2022">
+                    <a href="https://scholar.google.co.in/citations?view_op=view_citation&hl=en&user=EHRxUwcAAAAJ&citation_for_view=EHRxUwcAAAAJ:5nxA0vEk-isC">Data visualisation using augmented reality for education system (2022)</a>
+                    <button onclick="window.open('https://drive.google.com/file/d/1UsM9mLn8NAU7rKpwoH55--BxUosz61nV/view?usp=sharing','_blank')">Download</button>
+                </li>
+                <li data-year="2021">
+                    <a href="https://scholar.google.co.in/citations?view_op=view_citation&hl=en&user=EHRxUwcAAAAJ&citation_for_view=EHRxUwcAAAAJ:_FxGoFyzp5QC">An Effective Approach on Data Visualization Using Cluster Graphs (2021)</a>
+                    <button onclick="window.open('https://drive.google.com/file/d/1X2kJBCDHFJWgg5QjC08Ume17fIF3ujeo/view?usp=sharing','_blank')">Download</button>
+                </li>
+                <li data-year="2013">
+                    <a href="https://scholar.google.co.in/citations?view_op=view_citation&hl=en&user=EHRxUwcAAAAJ&citation_for_view=EHRxUwcAAAAJ:zYLM7Y9cAGgC">Load Balancing In Structured Peer To Peer Network Using DSLS and ASH Algorithm (2013)</a>
+                    <button onclick="window.open('https://scholar.google.co.in/citations?view_op=view_citation&hl=en&user=EHRxUwcAAAAJ&citation_for_view=EHRxUwcAAAAJ:zYLM7Y9cAGgC','_blank')">Download</button>
+                </li>
+                <li data-year="2016">
+                    <a href="https://scholar.google.co.in/citations?view_op=view_citation&hl=en&user=EHRxUwcAAAAJ&citation_for_view=EHRxUwcAAAAJ:W7OEmFMy1HYC">A Survey on Data Security in Military Networks using CP-ABE where Multiple Key Authorities Manage their Attributes Separately (2016)</a>
+                    <button onclick="window.open('https://drive.google.com/file/d/19MmLIGRi7LCPbX3O8DZBjoS4Nfd6ySW6/view?usp=sharing','_blank')">Download</button>
+                </li>
+                <li data-year="2016">
+                    <a href="https://scholar.google.co.in/citations?view_op=view_citation&hl=en&user=EHRxUwcAAAAJ&citation_for_view=EHRxUwcAAAAJ:Y0pCki6q_DkC">A Survey on Electronic Voting System Based on Fingerprint Authentication (2016)</a>
+                    <button onclick="window.open('https://drive.google.com/file/d/1VfbMbWFxLunVKQCGs20hjv9zSD9rb1hP/view?usp=sharing','_blank')">Download</button>
+                </li>
+                <li data-year="2016">
+                    <a href="https://scholar.google.co.in/citations?view_op=view_citation&hl=en&user=EHRxUwcAAAAJ&citation_for_view=EHRxUwcAAAAJ:Tyk-4Ss8FVUC">A Survey On, An Efficient Method for Refugee Identification using Face Detection and Recognition (2016)</a>
+                    <button onclick="window.open('https://drive.google.com/file/d/1v7KbnlLZ3hoADYR1mqk5E2X0OQVDPl6k/view?usp=sharing','_blank')">Download</button>
+                </li>
+                <li data-year="2016">
+                    <a href="https://scholar.google.co.in/citations?view_op=view_citation&hl=en&user=EHRxUwcAAAAJ&citation_for_view=EHRxUwcAAAAJ:Tyk-4Ss8FVUC">Android Application Speech Recognition for Remote Computer Control System(2016)</a>
+                    <button onclick="window.open('https://scholar.google.co.in/citations?view_op=view_citation&hl=en&user=EHRxUwcAAAAJ&citation_for_view=EHRxUwcAAAAJ:Tyk-4Ss8FVUC','_blank')">Download</button>
+                </li>
+                <li data-year="2015">
+                    <a href="https://scholar.google.co.in/citations?view_op=view_citation&hl=en&user=EHRxUwcAAAAJ&cstart=20&pagesize=80&citation_for_view=EHRxUwcAAAAJ:qjMakFHDy7sC">Internet Of Things-Changing The Game (2015)</a>
+                    <button onclick="window.open('https://drive.google.com/file/d/1eWR7mRBajyCM0VqyOzQPe-SHwGRtuQ_n/view?usp=sharing','_blank')">Download</button>
+                </li>
+                <li data-year="2014">
+                    <a href="https://scholar.google.co.in/citations?view_op=view_citation&hl=en&user=EHRxUwcAAAAJ&cstart=20&pagesize=80&citation_for_view=EHRxUwcAAAAJ:2osOgNQ5qMEC">Software Specified Network Infrastructure Management (2014)</a>
+                    <button onclick="window.open('https://drive.google.com/file/d/1UY1Y8cNRGtIXhBDnqeXWPssBrJKhWV1X/view?usp=sharing','_blank')">Download</button>
+                </li>
+                <li data-year="2014">
+                    <a href="https://scholar.google.co.in/citations?view_op=view_citation&hl=en&user=EHRxUwcAAAAJ&cstart=20&pagesize=80&citation_for_view=EHRxUwcAAAAJ:d1gkVwhDpl0C">Prediction of the Blood Glucose Metabolism in Diabetic Patients Using a Neural Network (2014)</a>
+                    <button onclick="window.open('https://drive.google.com/file/d/1-NYMD1fad4VPLshtZ5N3ZhyHkdCMnval/view?usp=sharing','_blank')">Download</button>
+                </li>
+                <li data-year="2011">
+                    <a href="https://scholar.google.co.in/citations?view_op=view_citation&hl=en&user=EHRxUwcAAAAJ&cstart=20&pagesize=80&citation_for_view=EHRxUwcAAAAJ:d1gkVwhDpl0C">THE SERVER REASSIGNMENT FOR LOAD BALANCING (2011)</a>
+                    <button onclick="window.open('https://scholar.google.co.in/citations?view_op=view_citation&hl=en&user=EHRxUwcAAAAJ&cstart=20&pagesize=80&citation_for_view=EHRxUwcAAAAJ:d1gkVwhDpl0C','_blank')">Download</button>
+                </li>
+                <li data-year="2011">
+                    <a href="https://scholar.google.co.in/citations?view_op=view_citation&hl=en&user=EHRxUwcAAAAJ&cstart=20&pagesize=80&citation_for_view=EHRxUwcAAAAJ:9yKSN-GCB0IC">Load Balancing In Structured Peer to Peer Systems (2011)</a>
+                    <button onclick="window.open('https://drive.google.com/file/d/1YUGBwxT2ctqhtFyW_3jCLPUwNv_8MY4n/view?usp=sharing','_blank')">Download</button>
+                </li>
+                <li data-year="2018">
+                    <a href="https://ijircce.com/admin/main/storage/app/pdf/cKLfrh2vBOPhEWaRgHa7iBxuCG7fEjOq3FAzN7LJ.pdf">Secret-QA using Smartphone Sensors and App Data(2018)</a>
+                    <button onclick="window.open('https://drive.google.com/file/d/1U6fLAxfT0P4yyucykgcBkoEdKwpokggk/view?usp=sharing','_blank')">Download</button>
+                </li>
+
+        <li data-year="2018">
+                    <a href="https://ijsrd.com/Article.php?manuscript=IJSRDV5I110175">A Safe and Confirmable Access Control System for Storing Big Data in Clouds(2018)</a>
+                    <button onclick="window.open('https://drive.google.com/file/d/1ku1Aaa1CTOeYM-eGFl50KXFe4v-h_7_X/view?usp=sharing','_blank')">Download</button>
+                </li>
+<li data-year="2018">
+                    <a href="https://ijsrd.com/Article.php?manuscript=IJSRDV5I120149">Decision Support System for Water Conservation and Availability Prediction(2018)</a>
+                    <button onclick="window.open('https://drive.google.com/file/d/1mRrFjxVynPjlHMWQ8DCNMUbGMI83KiSm/view?usp=sharing','_blank')">Download</button>
+                </li>
+
+                <!-- Additional journal items go here -->
+            </ul>
+        </section>
+        
+        <script>
+            function updateJournalCount() {
+                const journalList = document.getElementById("journal-list");
+                const journalCount = journalList.getElementsByTagName("li").length;
+                document.getElementById("journal-count").textContent = `Total Journals: ${journalCount}`;
+            }
+        
+            window.onload = updateJournalCount;
+        </script>
+        
+        <section id="patents" class="category">
+            <h2>Patents</h2>
+            <span id="patent-count" style="float: left; font-weight: bold; margin-right: 10px;"> Total Patents:2</span> <!-- Counter for patents links -->
+            <div style="clear: both; margin-top: 10px;">
+                <label for="patent-sort">Sort by Year:</label>
+                <select id="patent-sort" onchange="sortPatents()">
+                    <option value="desc">Descending</option>
+                    <option value="asc">Ascending</option>
+                </select>
+            </div>
+            <ul id="patent-list">
+                <li data-year="2024">
+                    AI-BASED STROKE DISEASE PREDICTION DEVICE (2024)
+                    <button onclick="window.open('https://drive.google.com/file/d/1iomm8XdNw6BY3Pw70eTgaIxa8ss_gyN1/view?usp=sharing','_blank')">Download</button>
+                </li>
+                <li data-year="2022">
+                    AUGMENTED REALITY TECHNIQUE FOR VISUALIZATION OF BIG DATA ANALYTICS (2022)
+                    <button onclick="window.open('https://drive.google.com/file/d/1lC40iwlOWY6tr5MPTtFAUR_u25zO3FZT/view?usp=sharing','_blank')">Download</button>
+                </li>
+            </ul>
+        </section>
+        
+        <section id="copyrights" class="category">
+            <h2>Copyrights</h2>
+            <span id="copyright-count" style="float: left; font-weight: bold; margin-right: 10px;">Total Copyrights:2 </span> <!-- Counter for copyright links -->
+            <div style="clear: both; margin-top: 10px;">
+                <label for="copyright-sort">Sort by Year:</label>
+                <select id="copyright-sort" onchange="sortCopyrights()">
+                    <option value="desc">Descending</option>
+                    <option value="asc">Ascending</option>
+                </select>
+            </div>
+            <ul id="copyright-list">
+                <li data-year="2021">
+                    A SOURCE CODE SIMILARITY DETECTION SOFTWARE FOR PRACTICAL ASSIGNMENTS IN EDUCATIONAL INSTITUTES (2021)
+                    <button onclick="window.open('https://drive.google.com/file/d/1jNhP0WPxiw88w8j5-aDGGAr8A36EbWDh/view?usp=sharing','_blank')">Download</button>
+                </li>
+                <li data-year="2022">
+                    A MARKER-BASED AUGMENTED REALITY METHOD FOR DATA ANALYTICS VISUALIZATION (2024)
+                    <button onclick="window.open('https://drive.google.com/file/d/1vXaEkXVAzGDcZ9Ns8CsJJIwCawE7-vbG/view?usp=sharing','_blank')">Download</button>
+                </li>
+            </ul>
+        </section>
+        
+        <section id="book" class="category">
+            <h2>Book & Book Chapter</h2>
+            <span id="book-count" style="float: left; font-weight: bold; margin-right: 10px;">Total Book & Book Chapter:3</span> <!-- Counter for book links -->
+            <div style="clear: both; margin-top: 10px;">
+                <label for="book-sort">Sort by Year:</label>
+                <select id="book-sort" onchange="sortBook()">
+                    <option value="desc">Descending</option>
+                    <option value="asc">Ascending</option>
+                </select>
+            </div>
+            <ul id="book-list">
+                <li data-year="2022">
+                    <a href="https://onlinelibrary.wiley.com/doi/chapter-epub/10.1002/9781119836759.ch1#accessDenialLayout">Overview of Social Network Analysis and Different Graph File Formats (2022)</a>
+                    <button onclick="window.open('https://docs.google.com/document/d/1lnq2C3gNKXBpm-0aHEEN_ml60UzNB4vnSMjY1YHimY4/edit?usp=sharing','_blank')">Download</button>
+                </li>
+                <li data-year="2020">
+                    <a href="https://www.igi-global.com/chapter/big-data-analytics-and-visualization-for-food-health-status-determination-using-bigmart-data/290999">Big Data Analytics and Visualization for Food Health Status Determination Using Bigmart Data (2020)</a>
+                    <button onclick="window.open('https://drive.google.com/file/d/1SeVS6sBBD-VpgtA16-aeBBU0fmVj0MtY/view?usp=sharing','_blank')">Download</button>
+                </li>
+                <li data-year="2023">
+                    <a href="https://www.flipkart.com/fundamentals-python-programming/p/itmc231b77c1b756?pid=9789357571944">Book : Fundamentals of Python Programming (2023)</a>
+                    <button onclick="window.open('https://docs.google.com/document/d/16AOl1SgoLSzeRo7JX4SRYKHXAC2x2gcE7KelHrzNj0c/edit?usp=sharing','_blank')">Download</button>
+                </li>
+            </ul>
+        </section>
+        
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 Dr. Sumit Hirve </p>
+        <p> Gmail : sumit.hirve@gmail.com <br>Contact: 9011044600 </p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
